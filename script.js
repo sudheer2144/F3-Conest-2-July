@@ -4,6 +4,7 @@ timerArr=[];
 document.getElementById("set-button").addEventListener("click",validateInput);
 
 function checkTimers(){
+    
     let timers=document.getElementsByClassName("timer");
     if(timers.length>0){
         document.getElementById("noTimers").style.display="none";
@@ -11,9 +12,11 @@ function checkTimers(){
     else{
         document.getElementById("noTimers").style.display="";
     }
+
 }
 
 function validateInput(){
+
     let hh = document.getElementById("hours").value;
     let mm = document.getElementById("minutes").value;
     let ss = document.getElementById("seconds").value;
