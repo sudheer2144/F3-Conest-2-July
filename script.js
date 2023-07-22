@@ -182,6 +182,7 @@ function addStopFunction(timer){
     btn.onclick = ()=>{             
         timer.remove();   //this will remove "timer" from the parent
         playAudio(false); //stops the audio
+        checkTimers();
     }
 }
 
