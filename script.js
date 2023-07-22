@@ -4,9 +4,7 @@ timerArr=[];
 document.getElementById("set-button").addEventListener("click",validateInput);
 
 function checkTimers(){
-    console.log("checked")
     let timers=document.getElementsByClassName("timer");
-    console.log(timers);
     if(timers.length>0){
         document.getElementById("noTimers").style.display="none";
     }
@@ -114,8 +112,6 @@ function delFromList(timer){
 
 
 function decreaseTime(hh,mm,ss,timer){
-
-    console.log(hh +":"+mm+":"+ss);
     if(document.getElementsByName(timer.name).length == 0){
         return;
     }
